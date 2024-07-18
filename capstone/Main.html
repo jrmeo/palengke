@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="product">
+                <div class="product-info">
+                    <div class="product-image">
+                        <!-- Placeholder image -->
+                    </div>
+                    <div class="product-details">
+                        <h2>Chicken</h2>
+                        <p>Price: 500</p>
+                       
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <nav class="bottom-nav">
+                <a href="#">
+                    <img src="Image/Heart.png" alt="Favorites">
+                    <span>Favorites</span>
+                </a>
+                <a href="users.php">
+                    <img src="Image/Message.png" alt="Messages">
+                    <span>Messages</span>
+                </a>
+                <a href="#">
+                    <img src="Image/Cart.png" alt="Cart">
+                    <span>Cart</span>
+                </a>
+                <a href="#">
+                    <img src="Image/Profile.png" alt="Profile">
+                    <span>Profile</span>
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+<style>
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #28a745;
+    padding: 10px 0;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 8px 20px;
+    background-color: white;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: 333(0, 0, 0);
+    cursor: pointer;
+}
+
+/* Main styles */
+main {
+    padding: 20px 0;
+}
+
+.product {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    width: 130px;
+    height: 130px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+
+.product-details {
+    flex: 1;
+    padding: 5px;
+}
+
+.product-details h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.bottom-nav a {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.bottom-nav a img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+
+</style>

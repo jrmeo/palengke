@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Stores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Favorite Stores</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="favorite-store">
+                <div class="store-card">
+                    <div class="store-image">
+                        <!-- Placeholder image -->
+                        <span class="favorite-heart">&#10084;</span>
+                    </div>
+                    <h2>Store Name</h2>
+                </div>
+                <!-- Add more store cards as needed -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <nav class="bottom-nav">
+                <a href="#">
+                    <img src="Image/Heart.png" alt="Favorites">
+                    <span>Favorites</span>
+                </a>
+                <a href="#">
+                    <img src="Image/Message.png" alt="Messages">
+                    <span>Messages</span>
+                </a>
+                <a href="#">
+                    <img src="Image/Cart.png" alt="Cart">
+                    <span>Cart</span>
+                </a>
+                <a href="#">
+                    <img src="Image/Profile.png" alt="Profile">
+                    <span>Profile</span>
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<style>
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #007bff;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.favorite-store {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.store-card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.store-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+}
+
+.favorite-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 24px;
+}
+
+.store-card h2 {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .favorite-store {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.bottom-nav a {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.bottom-nav a img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+</style>
